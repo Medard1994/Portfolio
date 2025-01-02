@@ -1,17 +1,22 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./component/Home";
-import EditTask from "./component/EditTask";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import NotFound from "./pages/NotFound"
+import Home from "./pages/Home"
+
+import Navbar from "./component/Navbar"
+import Footer from "./component/Footer"
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/task/:id" element={<EditTask />} />
-      </Routes>
-    </Router>
-  );
-};
+   <Router>
+    <Navbar />
+    <Routes>
 
-export default App;
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+    <Footer />
+   </Router>
+  )
+}
 
+export default App
