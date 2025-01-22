@@ -9,13 +9,15 @@ const AboutMe = () => {
         <h2 className="text-3xl text-black">Hello, my name is Medard NIZIGAMA.</h2>
         <strong>I’m a passionate and dedicated developer specializing in creating 
           modern, responsive, and user-friendly web applications. My skill set includes:</strong>
+
         <ul className="list-disc">
           <li className="text-xl text-black"><span className="font-extrabold text-indigo-700">Frontend Development:</span> HTML, CSS, JavaScript, and React.js.</li>
           <li className="text-xl text-black"><span className="font-extrabold text-indigo-700">Design & Prototyping:</span> Expertise in Figma for crafting visually stunning UI/UX designs.</li>
           <li className="text-xl text-black"><span className="font-extrabold text-indigo-700">Styling Frameworks:</span> Tailwind CSS for building clean and scalable styles efficiently.</li>
           <li className="text-xl text-black"><span className="font-extrabold text-indigo-700">Responsive Design:</span> Ensuring seamless user experiences across all devices.</li>
         </ul>
-        <p className="text-justify text-purple-600 text-xl">
+        
+        <p className="font-extrabold text-justify text-black text-xl">
           I thrive on turning creative ideas into functional, high-quality 
           digital solutions. My focus is on writing clean, maintainable code and delivering 
           projects that combine aesthetics with top-notch performance. I’m always eager to 

@@ -2,14 +2,18 @@ import Medard from "../assets/Medard.jpg";
 
 const Hero = () => {
   return (
+    
     <main
       id="home"
-      className="flex items-center h-[100vh] gap-6 px-5 bg-gradient-to-r from-sky-200 to-indigo-400 z-0"
+      
+      className="flex items-center h-[100vh] gap-6 px-5 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsgnHg5gs5Hbfyy0nAfmPeqH0LfmhFcw__QQ&s')] 
+      bg-cover bg-no-repeat bg-center  z-0"
       role="main"
     >
+      
       <div className="w-3/5 space-y-5">
         <h1 className="font-extrabold text-4xl">Hi, I am Medard</h1>
-        <p>
+        <p className="font-extrabold text-xl ">
           A passionate Frontend Developer who turns design ideas into functional
           and interactive websites. My expertise includes HTML, CSS,
           JavaScript, React, and Tailwind CSS. With a strong background in
@@ -22,7 +26,7 @@ const Hero = () => {
         </p>
         <button
           onClick={() => alert("Sign me up")}
-          className="bg-gray-800 text-white text-[18px] py-4 px-12 rounded-full hover:bg-slate-950 focus:ring-[2px] focus:ring-offset-green-500 focus:ring-offset-[1px] outline-none"
+          className="bg-slate-900 text-white text-[18px] py-4 px-12 rounded-full hover:bg-slate-950 focus:ring-[2px] focus:ring-offset-green-500 focus:ring-offset-[1px] outline-none"
         >
           Sign me up
         </button>
@@ -31,7 +35,7 @@ const Hero = () => {
         <img
           src={Medard}
           alt="Portrait of Medard"
-          className="w-[400px] h-[400px] object-cover rounded-full shadow-lg"
+          className="w-[200px] h-[300px] object-cover rounded-full shadow-lg"
         />
       </div>
     </main>
