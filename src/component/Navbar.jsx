@@ -1,31 +1,30 @@
+import Logo from "../assets/Logo.jpg";
 
-import Logo from "../assets/Logo.svg";
-import { FaSearch } from "react-icons/fa";
+
 const Navbar = () => {
   return (
     <header className="bg-gray-300 fixed top-0 left-0 w-full z-10">
-   <nav className="bg-green-300 flex items-center justify-between text-black h-[60px]">
-    <img src={Logo} alt="Logo.svg" className="w-[150px]"/>
-
-    <div className="relative flex items-center">
-    <FaSearch className="absolute left-52 text-gray-500" />
-  <input
-    type="text"
-    placeholder="Searching"
-    className="rounded-2xl border border-gray-300 px-4 py-2 pl-10 w-full focus:outline-none"
-  />
-  
-</div>
-    <ul className="space-x-10 mr-5">
-        <a href="#home"className="hover:text-red-600 transition duration-200">Home</a>
-        <a href="#about" className="hover:text-red-600 transition duration-200">AboutMe</a>
-        <a href="#skills" className="hover:text-red-600 transition duration-200">Skills</a>
-        <a href="#contact" className="hover:text-red-600 transition duration-200">ContactMe</a>
+      <nav className="bg-green-300 flex items-center justify-between text-black h-[60px] px-4 md:px-8 lg:px-16">
         
-    </ul>
-   </nav>
-   </header>
-  )
-}
+        <img src={Logo} alt="Logo" className="w-[100px] md:w-[120px] lg:w-[150px]" />
 
-export default Navbar
+        <ul className="hidden md:flex space-x-4 lg:space-x-10 mr-2">
+          <li><a href="#home" className="hover:text-red-600 transition duration-200">Home</a></li>
+          <li><a href="#about" className="hover:text-red-600 transition duration-200">AboutMe</a></li>
+          <li><a href="#skills" className="hover:text-red-600 transition duration-200">Skills</a></li>
+          <li><a href="#contact" className="hover:text-red-600 transition duration-200">ContactMe</a></li>
+        </ul>
+
+        <div className="md:hidden flex items-center">
+          <button className="text-gray-500 hover:text-gray-700 focus:outline-none">
+            <span className="sr-only">Open Menu</span>
+            
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;

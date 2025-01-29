@@ -14,7 +14,7 @@ const Skills = () => {
       LevelTextColor: "text-white",
       LevelBorderColor: "border-yellow-500",
       NameColor: "text-yellow-700",
-      SkillIcon: <FaJs />,
+      SkillIcon: <FaJs />, 
     },
     {
       Name: "React",
@@ -23,7 +23,7 @@ const Skills = () => {
       LevelTextColor: "text-white",
       LevelBorderColor: "border-blue-500",
       NameColor: "text-blue-700",
-      SkillIcon: <FaReact />,
+      SkillIcon: <FaReact />, 
     },
     {
       Name: "Responsive",
@@ -32,7 +32,7 @@ const Skills = () => {
       LevelTextColor: "text-white",
       LevelBorderColor: "border-blue-500",
       NameColor: "text-blue-700",
-      SkillIcon: <FaReact />,
+      SkillIcon: <FaReact />, 
     },
     {
       Name: "Tailwindcss",
@@ -41,7 +41,7 @@ const Skills = () => {
       LevelTextColor: "text-white",
       LevelBorderColor: "border-blue-500",
       NameColor: "text-blue-700",
-      SkillIcon: <FaReact />,
+      SkillIcon: <FaReact />, 
     },
     {
       Name: "HTML",
@@ -50,7 +50,7 @@ const Skills = () => {
       LevelTextColor: "text-white",
       LevelBorderColor: "border-yellow-500",
       NameColor: "text-yellow-700",
-      SkillIcon: <FaHtml5 />,
+      SkillIcon: <FaHtml5 />, 
     },
     {
       Name: "CSS",
@@ -59,7 +59,7 @@ const Skills = () => {
       LevelTextColor: "text-white",
       LevelBorderColor: "border-purple-500",
       NameColor: "text-purple-700",
-      SkillIcon: <FaCss3Alt />,
+      SkillIcon: <FaCss3Alt />, 
     },
     {
       Name: "Figma",
@@ -68,19 +68,18 @@ const Skills = () => {
       LevelTextColor: "text-white",
       LevelBorderColor: "border-blue-500",
       NameColor: "text-blue-700",
-      SkillIcon: <FaFigma />,
+      SkillIcon: <FaFigma />, 
     },
   ];
 
   return (
-    <main id="skills" className="h-screen bg-blue-100 py-10 flex items-center justify-center">
-      <div className="max-w-5xl mx-auto flex flex-wrap gap-6 justify-center">
+    <main id="skills" className="min-h-screen bg-blue-100 py-10 flex items-center justify-center">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`relative transition-transform duration-300 ease-in-out cursor-pointer ${
-              activeSkill === skill.Name ? "translate-y-[-10px]" : "hover:translate-y-[-5px]"
-            }`}
+            className={`relative transition-transform duration-300 ease-in-out cursor-pointer 
+              ${activeSkill === skill.Name ? "translate-y-[-10px]" : "hover:translate-y-[-5px]"}`}
             onClick={() =>
               setActiveSkill(activeSkill === skill.Name ? null : skill.Name)
             }
