@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaFigma } from "react-icons/fa";
-import Card from "../component/Card";
+import Card from "./Card";
 
 const Skills = () => {
   const [activeSkill, setActiveSkill] = useState(null);

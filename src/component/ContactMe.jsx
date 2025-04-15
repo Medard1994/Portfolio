@@ -21,17 +21,17 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send email using Email.js
+    
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // Replace with your Email.js service ID
-        "YOUR_TEMPLATE_ID", // Replace with your Email.js template ID
+        "YOUR_SERVICE_ID", 
+        "YOUR_TEMPLATE_ID",
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
         },
-        "YOUR_USER_ID" // Replace with your Email.js public key/user ID
+        "YOUR_USER_ID" 
       )
       .then(
         (response) => {
@@ -50,7 +50,7 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className="p-4 md:p-8 bg-gray-100 rounded-lg shadow-lg max-w-md sm:max-w-lg lg:max-w-2xl mx-auto text-center z-0 min-h-screen flex flex-col justify-center"
+      className="p-4 md:p-8 bg-gray-100 rounded-lg shadow-lg max-w-md sm:max-w-lg lg:max-w-2xl mx-auto text-center z-0 min-h-screen flex flex-col justify-center mt-[60px]"
     >
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-gray-800">
         Contact Me

@@ -2,7 +2,7 @@ const AboutMe = () => {
   return (
     <main
       id="about"
-      className="h-screen bg-gradient-to-r from-blue-50 to-indigo-100 pt-[6rem] z-0 w-full"
+      className="h-screen bg-gradient-to-r from-blue-50 to-indigo-100 pt-[6rem] z-0 w-full mt-20"
     >
       <div
         className="space-y-6 max-w-5xl mx-auto flex flex-col justify-center items-center h-full bg-white rounded-[50px] px-6 md:px-12 lg:px-24 relative shadow-lg"
@@ -53,6 +53,8 @@ const AboutMe = () => {
             </p>
           </div>
         </ul>
+        
+        
       </div>
     </main>
   );

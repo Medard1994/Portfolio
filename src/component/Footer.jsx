@@ -9,39 +9,39 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   const currentYear = new Date () .getFullYear();
 return (
-  <main className="flex gap-x-10">
+  <main className="flex gap-x-10 my-[10px]">
     <footer className="bg-gray-800 text-white flex gap-2 
    justify-center h-auto rounded-md w-[100%] ">
     <ul className="flex-col ">
     <div className="flex mx-3">
-    <FaFacebookF className="text-4xl text-blue-600"/>
+    <FaFacebookF />
     <p className="font-bold">:nizigama Medard uwitonze</p>
     </div>
     <div className="flex gap-x-4 ">
-    <MdOutlineContactPhone className="text-4xl text-blue-600" />
+    <MdOutlineContactPhone  />
 
     <p className="font-bold">:0790212088</p>
     </div>
     <div className="flex gap-x-4 ">
-    <FaWhatsapp className="text-4xl text-blue-600 "/>
+    <FaWhatsapp />
     <p>:0780039928</p>
     </div>
     </ul>
 
     <ul className="flex-col mx-60">
     <div className="flex">
-<MdEmail className="text-4xl text-blue-600"/>
+<MdEmail />
  <p>:nimedard29@gmail.com</p>
 </div> 
 <div className="flex">
-<FaTumblr className="text-4xl text-blue-600" />
+<FaTumblr  />
 
  <p>:medard niz pro</p>
 </div>
 <div className="flex">
-<FaInstagram className="text-4xl text-blue-600"/>
+<FaInstagram />
 
- <p>:medard pro</p>
+ <p>:medardnizigama</p>
 </div>
     </ul>
       

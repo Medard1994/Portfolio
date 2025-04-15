@@ -9,7 +9,7 @@ const Card = ({ SkillName,
   SkillIcon,
 }) => {
   return (
-    <div
+    <div 
       className={`p-4 border ${SkillLevelBorderColor} rounded-lg shadow-md flex items-center space-x-4`}
     >
      

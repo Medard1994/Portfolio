@@ -1,26 +1,25 @@
-import AboutMe from "../sections/AboutMe"
-import ContactMe from "../sections/ContactMe"
-import Document from "../sections/Document"
-import Hero from "../sections/Hero"
-import Skills from "../sections/Skills"
+// import AboutMe from "../sections/AboutMe"
+// import ContactMe from "../sections/ContactMe"
+// import Document from "../sections/Document"
+// import Hero from "../sections/Hero"
+// import Skills from "../sections/Skills"
 
 
-const Home = () => {
-  return (
+// const Home = () => {
+//   return (
     
-    <ul>
-       <Hero />,
-       <AboutMe/>,
-       <Skills/> 
-    <ContactMe/>,
-    <Document />
+//     <ul>
+//        <Hero />,
+//        <AboutMe/>,
+//        <Skills/> 
+//     <ContactMe/>,
+//     <Document />
     
     
     
-    </ul>
+//     </ul>
     
 
-  )
-}
-
-export default Home
+//   )
+// }
+// export default Home
