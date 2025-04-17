@@ -6,7 +6,7 @@ const Home = () => {
     <main
       id="home"
       className="flex flex-col md:flex-row items-center h-[100vh] gap-6 px-5 
-      bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 text-white"
+      bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 text-white mt-[100px]"
       role="main"
     >
       <div className="w-full md:w-1/3 flex justify-center">
